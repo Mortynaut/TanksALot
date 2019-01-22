@@ -1,5 +1,5 @@
 # TanksALot
-Free Tanks game playable by two people or against AI, made in Unreal 4
+Free Tanks game playable by (currently zero) two people or against (just spawned models of tanks) AI, made in Unreal 4
 
 Screenshots:
 
