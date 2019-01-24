@@ -18,5 +18,6 @@ class TANKSALOT_API ATankPlayerController : public APlayerController
 public:
 	void BeginPlay() override;
 
+private:
 	ATank* GetControlledTank() const;
 };
