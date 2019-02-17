@@ -28,6 +28,17 @@ void ATankAIController::BeginPlay()
 	}
 }
 
+void ATankAIController::Tick(float DeltaTime)
+{
+	Super::Tick(DeltaTime);
+	auto PlayerTank = GetPlayerPawn();
+	if (!PlayerTank) { return; }
+	else 
+	{
+		GetControlledTank()->AimAt(PlayerTank->GetActorLocation());
+	}
+}
+
 // Returns the tank that belongs to this AI
 ATank * ATankAIController::GetControlledTank() const
 {
